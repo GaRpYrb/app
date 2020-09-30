@@ -1,0 +1,29 @@
+div {
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+input {
+  margin-left: 20px;
+  cursor: pointer;
+}
+  
+i {
+  margin-left: 10px;
+}
+  
+.done {
+  color: green;
+}
+  
+.non {
+  color: red;
+  margin-top: 13px;
+}
+  
+.update {
+  cursor: pointer;
+}

@@ -1,0 +1,12 @@
+<form [formGroup]="updateForm" (ngSubmit)="onSubmit()">
+  <h4>Edit todo</h4>
+  <input #text type="text" formControlName="title">
+  <div class="status_container">
+    <label>Status</label>
+    <input type="checkbox" formControlName="complited">
+  </div>
+  <div class="button_container">
+    <button class="cancel" type="button" (click)="cancel()">Cancel</button>
+    <button class="save" type="submit">Save</button>
+  </div>
+</form>

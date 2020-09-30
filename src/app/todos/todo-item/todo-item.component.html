@@ -1,0 +1,3 @@
+<app-item-preview *ngIf="!isEdit" [todo]="todo" (removeTodoEvent)="removeItem($event)" (updateTodoEvent)="updateTodo()"></app-item-preview>
+<app-item-update *ngIf="isEdit"></app-item-update>
+

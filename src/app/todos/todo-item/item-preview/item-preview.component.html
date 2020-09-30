@@ -1,0 +1,7 @@
+<div>
+  <p>{{todo?.title}}</p>
+  <i *ngIf="todo?.complited" class="material-icons done">done</i>
+  <i *ngIf="!todo?.complited" class="material-icons non">maximize</i>
+  <i class="material-icons update" (click)="updateTodoEvent.emit()" [routerLink]="['/todos', todo.userId]">edit</i>
+  <i class="material-icons update" (click)="removeTodoEvent.emit(todo.userId)">delete</i>
+</div>

@@ -1,0 +1,40 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+input {
+  height: 20px;
+  margin: 10px 0;
+}
+
+input[type='checkbox'] {
+  margin-left: 10px;
+}
+
+.button_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.status_container {
+  display: flex;
+  align-items: center;
+}
+
+.cancel {
+  background-color: red;
+}
+
+.save {
+  background-color: lightgreen;
+}

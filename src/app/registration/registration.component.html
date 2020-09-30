@@ -1,0 +1,29 @@
+<form [formGroup]="regForm" (ngSubmit)="onSubmit()">
+  <label for="name">Name
+    <input id="name" placeholder="Enter name..." type="text" formControlName="name">
+  </label>
+  <label for="username">Username
+    <input id="username" placeholder="Enter username..." type="text" formControlName="username">
+  </label>
+  <label for="email">Email
+    <input id="email" placeholder="Enter email..." type="text" formControlName="email">
+  </label>
+  <label for="phone">Phone
+    <input id="phone" placeholder="Enter phone number(9 numbers)..." type="text" formControlName="phone">
+  </label>
+  <div formGroupName="address">
+    <label for="street">Street
+      <input id="street" placeholder="Enter street..." type="text" formControlName="street">
+    </label>
+    <label for="suite">Suite
+      <input id="suite" placeholder="Enter suite..." type="text" formControlName="suite">
+    </label>
+    <label for="city">City
+      <input id="city" placeholder="Enter city..." type="text" formControlName="city">
+    </label>
+    <label for="zipcode">Zip Code
+      <input id="zipcode" placeholder="Enter zip code..." type="text" formControlName="zipcode">
+    </label>
+  </div>
+  <button type=(submit) [class.button-disabled]="!regForm.valid" [disabled]="!regForm.valid">Register</button>
+</form>

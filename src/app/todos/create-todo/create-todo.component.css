@@ -1,0 +1,21 @@
+div {
+  width: 30%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+button {
+  background-color: blueviolet;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 15px;
+  color: white;
+}
